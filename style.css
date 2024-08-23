@@ -2086,6 +2086,9 @@ form input[type="reset"]:focus {
   font-size: 18px;
   margin: 0;
 }
+.page > div {
+  margin: 0 auto;
+}
 .page .row {
   margin: 25px -15px;
 }
