@@ -1954,8 +1954,18 @@ form input[type="reset"]:focus {
 
 .news-list {
   margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
 }
-
+.news-list > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news {
+}
 .news figure {
   margin-bottom: 20px;
   overflow: hidden;
@@ -2060,7 +2070,11 @@ form input[type="reset"]:focus {
 }
 
 .page {
-  padding: 50px 0;
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: baseline;
 }
 .page .entry-title {
   font-size: 48px;
@@ -2069,6 +2083,7 @@ form input[type="reset"]:focus {
 }
 .page p {
   line-height: 2;
+  font-size: 18px;
 }
 .page .row {
   margin: 25px -15px;
@@ -2414,6 +2429,14 @@ form input[type="reset"]:focus {
 }
 .btn-primary:hover {
   cursor: pointer;
+}
+.btn-blog {
+  background-color: #336699;
+  color: #fff;
+  width: 160px;
+}
+.btn-blog:hover {
+  background-color: #0f75bd;
 }
 .alert {
   font-size: 20px;
